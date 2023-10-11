@@ -183,19 +183,7 @@ document.getElementById('ventasLink').addEventListener('click', function(e) {
     document.querySelector('#ventasLink i').classList.toggle('bi-chevron-up');
 });
 </script>
-<script>
-    function confirmar() {
-        var confirmacion = confirm("¿Estás seguro de que quieres agregar este elemento?");
-        
-        if (confirmacion) {
-            // Aquí colocarías el código que se ejecuta si el usuario confirma
-            alert("Elemento agregado.");
-        } else {
-            // Aquí colocarías el código que se ejecuta si el usuario cancela
-            alert("Elemento no agregado.");
-        }
-    }
-    </script>
+
 
     <div class="col-12 col-md-12"> 
 <form action="../php/insertarCliente.php" method="POST">
@@ -218,7 +206,7 @@ document.getElementById('ventasLink').addEventListener('click', function(e) {
   </div>
   
 <div class="form-group">
-  <button name="insertar" type="submit" class="btn btn-primary  btn-block" onclick="confirmar()">Guardar</button>
+  <button name="insertar" type="submit" class="btn btn-primary  btn-block">Guardar</button>
 </div>
 </form>
     </div> 

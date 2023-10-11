@@ -17,7 +17,6 @@ if (mysqli_query($mysqli_link, $delete_query)) {
 } else {
     echo 'Error al eliminar el registro: ' . mysqli_error($mysqli_link);
 }
-
 // Cierra la conexión a la base de datos
 mysqli_close($mysqli_link);
 ?>
